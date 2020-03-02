@@ -142,7 +142,8 @@
         "query-string": "6.10.1",
         "react": "16.12.0",
         "react-dom": "16.12.0",
-        "react-helmet-async": "1.0.4"
+        "react-helmet-async": "1.0.4",
+        "react-spring": "8.0.27"
     },
     "browserslist": {
         "production": [
