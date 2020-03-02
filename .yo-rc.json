@@ -1,0 +1,9 @@
+{
+  "generator-mht": {
+    "promptValues": {
+      "dockerUserName": "michaelhettmer",
+      "redux": false,
+      "dockerTag": "michaelhettmer/website"
+    }
+  }
+}
