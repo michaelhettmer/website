@@ -1,9 +1,9 @@
 {
-  "generator-mht": {
-    "promptValues": {
-      "dockerUserName": "michaelhettmer",
-      "redux": false,
-      "dockerTag": "michaelhettmer/website"
+    "generator-mht": {
+        "promptValues": {
+            "dockerUserName": "michaelhettmer",
+            "redux": false,
+            "dockerTag": "michaelhettmer/website"
+        }
     }
-  }
 }

@@ -16,12 +16,10 @@ const theme = createMuiTheme({ palette: { primary: { main: primary }, secondary:
 // eslint-disable-next-line react/display-name
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const wrapWithProvider = ({ element }: any) => {
-        return (
+    return (
         <HelmetProvider>
             <ThemeProvider {...{ theme }}>
-                <SnackbarProvider>
-                                        {element}
-            </SnackbarProvider>
+                <SnackbarProvider>{element}</SnackbarProvider>
             </ThemeProvider>
         </HelmetProvider>
     );
