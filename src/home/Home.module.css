@@ -1,0 +1,43 @@
+.Root {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.Top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00a3b1;
+    height: 400px;
+}
+
+.TopContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    max-width: 1024px;
+    padding: 32px 64px;
+}
+
+.Avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #006f7c;
+    border-radius: 128px;
+    width: 256px;
+    height: 256px;
+    margin-right: 48px;
+    font-size: 96px;
+    color: white;
+}
+
+.Greeting {
+    flex: 1;
+    margin-left: 48px;
+    font-size: 64px;
+}
