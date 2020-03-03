@@ -48,6 +48,7 @@ jobs:
                   root: ~/project
                   paths:
                       - reports/eslint
+                      - reports/stylelint
 
     test:
         docker:

@@ -112,3 +112,6 @@ temp/
 
 # Gatsby
 public
+
+# JJUnit reports
+reports
