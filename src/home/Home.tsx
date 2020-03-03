@@ -7,18 +7,11 @@ const items = ['Hi.', 'My name is', 'Michael'];
 const config = { mass: 5, tension: 2000, friction: 200 };
 
 export default () => {
-    const [toggle, setToggle] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => setToggle(true), 200);
-    }, []);
-
     const trail = useTrail(items.length, {
         config,
-        opacity: toggle ? 1 : 0,
-        x: toggle ? 0 : 20,
-        height: toggle ? 80 : 0,
-        from: { opacity: 0, x: 20, height: 0 },
+        opacity: 1,
+        height: 256 / 3,
+        from: { opacity: 0, height: 0 },
     });
 
     return (
@@ -29,10 +22,8 @@ export default () => {
                     <div className={styles.TopContent}>
                         <div className={styles.Avatar}>MH</div>
                         <span className={styles.Greeting}>
-                            {trail.map(({ x, height, ...rest }, index) => (
-                                <animated.div
-                                    key={items[index]}
-                                    style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
+                            {trail.map(({ height, ...rest }, index) => (
+                                <animated.div key={items[index]} style={{ ...rest }}>
                                     <animated.div style={{ height }}>{items[index]}</animated.div>
                                 </animated.div>
                             ))}

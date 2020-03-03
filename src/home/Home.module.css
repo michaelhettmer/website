@@ -37,7 +37,11 @@
 }
 
 .Greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     flex: 1;
     margin-left: 48px;
-    font-size: 64px;
+    font-size: calc(256px / 4);
+    height: 256px;
 }
