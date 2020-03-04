@@ -84,7 +84,7 @@ export default () => {
                 </div>
 
                 <div className={styles.Cards}>
-                    <Paper className={styles.CardsContent}>
+                    <Paper className={styles.CardsContent} elevation={4}>
                         <Highlight
                             img={data.development.childImageSharp.fluid}
                             label="Software Development"

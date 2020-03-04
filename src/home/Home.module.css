@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: #00a3b1;
+    box-shadow: inset 0px -15px 10px -15px #00000066;
     height: 512px;
 }
 
