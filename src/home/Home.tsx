@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTrail, animated } from 'react-spring';
+import React, { useEffect, useRef } from 'react';
+import { useTrail, animated, useSpring } from 'react-spring';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import SEO from '~/components/SEO';
@@ -59,6 +59,24 @@ export default () => {
         }
     `);
 
+    const ref = useRef();
+    const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
+    const handleScroll = () => {
+        if (ref && ref.current) {
+            const posY = ref.current.getBoundingClientRect()?.top;
+            const offset = window.pageYOffset - posY;
+            set({ offset });
+        }
+    };
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    });
+    const calcTranslateY = (factor: number, max = 512) =>
+        offset.interpolate(o => typeof o === 'number' && `translateY(${Math.min(o, max) * factor}px)`);
+
     const trail = useTrail(items.length, {
         config,
         opacity: 1,
@@ -67,11 +85,15 @@ export default () => {
     });
 
     return (
-        <>
+        <div ref={ref}>
             <SEO title="Home" />
             <div className={styles.Root}>
                 <div className={styles.Top}>
-                    <div className={styles.TopContent}>
+                    <animated.div
+                        className={styles.TopContent}
+                        style={{
+                            transform: calcTranslateY(0.1),
+                        }}>
                         <div className={styles.Avatar}>MH</div>
                         <span className={styles.Greeting}>
                             {trail.map(({ height, ...rest }, index) => (
@@ -80,29 +102,72 @@ export default () => {
                                 </animated.div>
                             ))}
                         </span>
-                    </div>
+                    </animated.div>
                 </div>
 
-                <div className={styles.Cards}>
+                <animated.div
+                    className={styles.Cards}
+                    style={{
+                        transform: calcTranslateY(-0.1),
+                    }}>
                     <Paper className={styles.CardsContent} elevation={4}>
-                        <Highlight
-                            img={data.development.childImageSharp.fluid}
-                            label="Software Development"
-                            content="Live demos and projects I'm working on"
-                        />
-                        <Highlight
-                            img={data.blog.childImageSharp.fluid}
-                            label="Blog"
-                            content="Articles, tutorials and things I find worth sharing for. Mostly software development related stuff.."
-                        />
-                        <Highlight
-                            img={data.papers.childImageSharp.fluid}
-                            label="Research"
-                            content="All publications, slides and other related files"
-                        />
+                        <div className={styles.CardsContentHightlight}>
+                            <Highlight
+                                img={data.development.childImageSharp.fluid}
+                                label="Software Development"
+                                content="Live demos and projects I'm working on"
+                            />
+                            <Highlight
+                                img={data.blog.childImageSharp.fluid}
+                                label="Blog"
+                                content="Articles, tutorials and things I find worth sharing for. Mostly software development related stuff.."
+                            />
+                            <Highlight
+                                img={data.papers.childImageSharp.fluid}
+                                label="Research"
+                                content="All publications, slides and other related files"
+                            />
+                        </div>
+
+                        <Typography variant="body1" className={styles.Text}>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                            consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+                            odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+                            nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                            iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+                            feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+                            imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                            iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                            feugiat nulla facilisis. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                            kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                            sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam
+                            dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet
+                            clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        </Typography>
                     </Paper>
-                </div>
+                </animated.div>
             </div>
-        </>
+        </div>
     );
 };

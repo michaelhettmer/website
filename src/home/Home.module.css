@@ -57,12 +57,16 @@
 
 .CardsContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
     max-width: 1400px;
-    height: 800px;
     padding: 64px 32px;
     margin-top: -48px;
+}
+
+.CardsContentHightlight {
+    display: flex;
+    flex-direction: row;
 }
 
 .Card {
@@ -83,4 +87,10 @@
     height: calc(384px - 256px);
     text-align: center;
     vertical-align: middle;
+}
+
+.Text {
+    padding: 48px 24px 0px 24px;
+    text-align: justify;
+    color: gray;
 }
