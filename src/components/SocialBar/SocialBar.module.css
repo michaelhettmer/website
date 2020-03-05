@@ -1,0 +1,18 @@
+.Root {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 24px;
+}
+
+.IconButton {
+    margin: 24px;
+}
+
+.Icon {
+    color: #00636e;
+    margin: 4px;
+}

@@ -3,6 +3,7 @@ import { useTrail, animated, useSpring } from 'react-spring';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import SEO from '~/components/SEO';
+import SocialBar from '~/components/SocialBar';
 import styles from './Home.module.css';
 import { Card, Paper, CardActionArea, CardContent, Typography } from '@material-ui/core';
 
@@ -89,6 +90,8 @@ export default () => {
             <SEO title="Home" />
             <div className={styles.Root}>
                 <div className={styles.Top}>
+                    <SocialBar />
+
                     <animated.div
                         className={styles.TopContent}
                         style={{
