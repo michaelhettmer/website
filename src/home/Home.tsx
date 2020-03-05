@@ -168,6 +168,8 @@ export default () => {
                     </Paper>
                 </animated.div>
             </div>
+
+            <div className={styles.Bottom} />
         </div>
     );
 };
