@@ -88,8 +88,18 @@
     margin-right: 32px;
 }
 
-.CardImage {
+.CardImageContainer {
     height: 256px;
+    overflow: hidden;
+}
+
+.CardImage {
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.CardImage:hover {
+    transform: scale(1.1);
 }
 
 .CardText {

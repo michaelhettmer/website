@@ -20,7 +20,9 @@ interface HighlightProps {
 const Highlight = ({ img, label, content }: HighlightProps) => (
     <Card variant="outlined" className={styles.Card}>
         <CardActionArea>
-            <Image fluid={img} className={styles.CardImage} />
+            <div className={styles.CardImageContainer}>
+                <Image fluid={img} className={styles.CardImage} />
+            </div>
             <CardContent className={styles.CardText}>
                 <Typography gutterBottom variant="h5" component="h2">
                     {label}
