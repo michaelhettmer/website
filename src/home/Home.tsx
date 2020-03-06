@@ -1,11 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import classNames from 'classnames';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTrail, animated, useSpring } from 'react-spring';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import SEO from '~/components/SEO';
 import SocialBar from '~/components/SocialBar';
 import styles from './Home.module.css';
-import { Card, Paper, CardActionArea, CardContent, Typography } from '@material-ui/core';
+import { Card, Paper, CardActionArea, CardContent, Typography, AppBar, Toolbar, Slide } from '@material-ui/core';
 
 const items = ['Hi.', 'My name is', 'Michael'];
 const config = { mass: 5, tension: 2000, friction: 200 };
@@ -61,7 +62,7 @@ export default () => {
             }
         }
     `);
-
+    const [isHeaderVisible, setIsHeaderVisible] = useState(false);
     const ref = useRef();
     const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
     const handleScroll = () => {
@@ -69,6 +70,8 @@ export default () => {
             const posY = ref.current.getBoundingClientRect()?.top;
             const offset = window.pageYOffset - posY;
             set({ offset });
+            if (isHeaderVisible && offset <= 650) setIsHeaderVisible(false);
+            else if (!isHeaderVisible && offset > 650) setIsHeaderVisible(true);
         }
     };
     useEffect(() => {
@@ -92,8 +95,6 @@ export default () => {
             <SEO title="Home" />
             <div className={styles.Root}>
                 <div className={styles.Top}>
-                    <SocialBar />
-
                     <animated.div
                         className={styles.TopContent}
                         style={{
@@ -177,6 +178,9 @@ export default () => {
             </div>
 
             <div className={styles.Bottom} />
+
+            <div className={classNames(styles.HeaderBar, { [styles.HeaderBarVisible]: isHeaderVisible })} />
+            <SocialBar />
         </div>
     );
 };
