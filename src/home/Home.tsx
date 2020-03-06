@@ -99,7 +99,9 @@ export default () => {
                         style={{
                             transform: calcTranslateY(0.1),
                         }}>
-                        <div className={styles.Avatar}>MH</div>
+                        <div className={styles.AvatarContainer}>
+                            <div className={styles.Avatar}>MH</div>
+                        </div>
                         <span className={styles.Greeting}>
                             {trail.map(({ height, ...rest }, index) => (
                                 <animated.div key={items[index]} style={{ ...rest }}>

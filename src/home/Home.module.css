@@ -37,6 +37,13 @@
     padding: 32px 64px;
 }
 
+.AvatarContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .Avatar {
     display: flex;
     flex-direction: column;
@@ -52,10 +59,10 @@
 }
 
 .Greeting {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1;
     margin-left: 48px;
     font-size: calc(256px / 4);
     height: 256px;
