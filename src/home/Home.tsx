@@ -1,12 +1,12 @@
 import classNames from 'classnames';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTrail, animated, useSpring } from 'react-spring';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, navigate } from 'gatsby';
 import Image from 'gatsby-image';
 import SEO from '~/components/SEO';
 import SocialBar from '~/components/SocialBar';
 import styles from './Home.module.css';
-import { Card, Paper, CardActionArea, CardContent, Typography, AppBar, Toolbar, Slide } from '@material-ui/core';
+import { Card, Paper, CardActionArea, CardContent, Typography } from '@material-ui/core';
 
 const items = ['Hi.', 'My name is', 'Michael'];
 const config = { mass: 5, tension: 2000, friction: 200 };
@@ -16,11 +16,12 @@ interface HighlightProps {
     img: any;
     label: string;
     content: string;
+    route: string;
 }
 
-const Highlight = ({ img, label, content }: HighlightProps) => (
+const Highlight = ({ img, label, content, route }: HighlightProps) => (
     <Card variant="outlined" className={styles.Card}>
-        <CardActionArea>
+        <CardActionArea onClick={() => navigate(route)}>
             <div className={styles.CardImageContainer}>
                 <Image fluid={img} className={styles.CardImage} />
             </div>
@@ -124,16 +125,19 @@ export default () => {
                                 img={data.development.childImageSharp.fluid}
                                 label="Software Development"
                                 content="Live demos and projects I'm working on"
+                                route="/projects"
                             />
                             <Highlight
                                 img={data.blog.childImageSharp.fluid}
                                 label="Blog"
                                 content="Articles, tutorials and things I find worth sharing for. Mostly software development related stuff.."
+                                route="/blog"
                             />
                             <Highlight
                                 img={data.papers.childImageSharp.fluid}
                                 label="Research"
                                 content="All publications, slides and other related files"
+                                route="/research"
                             />
                         </div>
 

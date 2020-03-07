@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'test') {
     (HelmetProvider as any).canUseDOM = false;
 }
 
-export const primary = '#3f51b5';
+export const primary = '#00a3b1';
 export const secondary = '#FFC05C';
 
 const theme = createMuiTheme({ palette: { primary: { main: primary }, secondary: { main: secondary } } });

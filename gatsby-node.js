@@ -9,9 +9,25 @@ exports.createPages = async ({ actions: { createPage }, reporter }) => {
         path: `/404`,
         component: path.resolve(`./src/base/404.tsx`),
     });
+
     createPage({
         path: `/`,
         component: path.resolve(`./src/home/Home.tsx`),
+    });
+
+    createPage({
+        path: `/projects`,
+        component: path.resolve(`./src/projects/Projects.tsx`),
+    });
+
+    createPage({
+        path: `/blog`,
+        component: path.resolve(`./src/blog/Blog.tsx`),
+    });
+
+    createPage({
+        path: `/research`,
+        component: path.resolve(`./src/research/Research.tsx`),
     });
 
     activity.end();
