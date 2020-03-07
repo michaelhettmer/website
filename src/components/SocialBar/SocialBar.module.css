@@ -5,7 +5,6 @@
     right: 0;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 24px;
 }
 
 .RootSmall {
@@ -14,14 +13,6 @@
 
 .IconButton {
     margin: 24px;
-    transition: 1s ease-in-out;
-    transform: scale(1);
-}
-
-.IconButtonSmall {
-    margin: 12px;
-    transition: 1s ease-in-out;
-    transform: scale(0.7);
 }
 
 .Icon {

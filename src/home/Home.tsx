@@ -67,6 +67,7 @@ export default () => {
     const [isHeaderVisible, setIsHeaderVisible] = useState(false);
     const ref = useRef();
     const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
+
     const handleScroll = () => {
         if (ref && ref.current) {
             const posY = ref.current.getBoundingClientRect()?.top;
