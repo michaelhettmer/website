@@ -179,8 +179,12 @@ export default () => {
 
             <div className={styles.Bottom} />
 
-            <div className={classNames(styles.HeaderBar, { [styles.HeaderBarVisible]: isHeaderVisible })} />
-            <SocialBar />
+            <div className={classNames(styles.HeaderBar, { [styles.HeaderBarVisible]: isHeaderVisible })}>
+                <Typography variant="h5" className={styles.HeaderBarText}>
+                    Home
+                </Typography>
+            </div>
+            <SocialBar small={isHeaderVisible} />
         </div>
     );
 };

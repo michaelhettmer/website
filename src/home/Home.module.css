@@ -130,6 +130,10 @@
     top: 0;
     right: 0;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
     width: 100vw;
     height: 64px;
     transition: 0.5s ease-in-out;
@@ -139,4 +143,8 @@
 
 .HeaderBarVisible {
     opacity: 1;
+}
+
+.HeaderBarText {
+    padding: 24px;
 }
