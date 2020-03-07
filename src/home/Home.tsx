@@ -3,10 +3,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useTrail, animated, useSpring } from 'react-spring';
 import { useStaticQuery, graphql, navigate } from 'gatsby';
 import Image from 'gatsby-image';
+import { Card, Paper, CardActionArea, CardContent, Typography, Link } from '@material-ui/core';
+import { GitHub } from '@material-ui/icons';
 import SEO from '~/components/SEO';
 import SocialBar from '~/components/SocialBar';
 import styles from './Home.module.css';
-import { Card, Paper, CardActionArea, CardContent, Typography } from '@material-ui/core';
 
 const items = ['Hi.', 'My name is', 'Michael'];
 const config = { mass: 5, tension: 2000, friction: 200 };
@@ -84,7 +85,7 @@ export default () => {
     const calcTranslateY = (factor: number, max = 512) =>
         offset.interpolate(o => typeof o === 'number' && `translateY(${Math.min(o, max) * factor}px)`);
 
-    const trail = useTrail(items.length, {
+    const topTrail = useTrail(items.length, {
         config,
         opacity: 1,
         height: 256 / 3,
@@ -105,13 +106,13 @@ export default () => {
                         <animated.div
                             className={styles.AvatarContainer}
                             style={{
-                                height: trail[1].height.interpolate(h => h * 3),
-                                opacity: trail[1].opacity.interpolate(o => o),
+                                height: topTrail[1].height.interpolate(h => h * 3),
+                                opacity: topTrail[1].opacity.interpolate(o => o),
                             }}>
                             <div className={styles.Avatar}>MH</div>
                         </animated.div>
                         <span className={styles.Greeting}>
-                            {trail.map(({ height, ...rest }, index) => (
+                            {topTrail.map(({ height, ...rest }, index) => (
                                 <animated.div key={items[index]} style={{ ...rest }}>
                                     <animated.div style={{ height }}>{items[index]}</animated.div>
                                 </animated.div>
@@ -187,7 +188,12 @@ export default () => {
                 </animated.div>
             </div>
 
-            <div className={styles.Bottom} />
+            <div className={styles.Bottom}>
+                <Link href="https://github.com/MichaelHettmer/website" color="secondary" variant="h5">
+                    <GitHub color="secondary" className={styles.BottomContent} />
+                    <span className={styles.BottomContent}>See the code</span>
+                </Link>
+            </div>
 
             <div className={classNames(styles.HeaderBar, { [styles.HeaderBarVisible]: isHeaderVisible })}>
                 <Typography variant="h5" className={styles.HeaderBarText}>

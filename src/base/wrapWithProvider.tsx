@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 export const primary = '#00a3b1';
-export const secondary = '#FFC05C';
+export const secondary = '#00636e';
 
 const theme = createMuiTheme({ palette: { primary: { main: primary }, secondary: { main: secondary } } });
 

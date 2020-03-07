@@ -1,3 +1,8 @@
+:root {
+    --top-height: 50vh;
+    --content-height: 25vh;
+}
+
 .Root {
     display: flex;
     flex-direction: column;
@@ -17,14 +22,24 @@
     align-items: center;
     justify-content: flex-start;
     box-shadow: inset 0px -15px 10px -15px #00000066;
-    height: 512px;
+    height: var(--top-height);
 }
 
 .Bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #00a3b1;
     box-shadow: inset 0px 15px 10px -15px #00000066;
-    height: 256px;
+    height: 25vh;
     margin-top: -96px;
+}
+
+.BottomContent {
+    vertical-align: middle;
+    margin: 4px;
+    margin: 48px 6px;
 }
 
 .TopContent {
@@ -34,8 +49,8 @@
     align-items: center;
     width: 100vw;
     max-width: 1024px;
-    height: 432px;
-    padding: 32px 64px;
+    flex: 1;
+    padding: 32px 0 64px 0;
 }
 
 .AvatarContainer {
@@ -52,8 +67,8 @@
     align-items: center;
     background-color: #006f7c;
     border-radius: 128px;
-    width: 256px;
-    height: 256px;
+    width: 25vh;
+    height: 25vh;
     margin-right: 48px;
     font-size: 96px;
     color: white;
@@ -65,8 +80,8 @@
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 48px;
-    font-size: calc(256px / 4);
-    height: 256px;
+    font-size: calc(25vh / 4);
+    height: 25vh;
 }
 
 .Cards {
@@ -98,7 +113,7 @@
 }
 
 .CardImageContainer {
-    height: 256px;
+    height: 25vh;
     overflow: hidden;
 }
 
@@ -114,7 +129,7 @@
 .CardText {
     display: flex;
     flex-direction: column;
-    height: calc(384px - 256px);
+    height: calc(384px - 25vh);
     text-align: center;
     vertical-align: middle;
 }
