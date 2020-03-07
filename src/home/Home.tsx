@@ -89,6 +89,7 @@ export default () => {
         opacity: 1,
         height: 256 / 3,
         from: { opacity: 0, height: 0 },
+        delay: 250,
     });
 
     return (
@@ -101,9 +102,14 @@ export default () => {
                         style={{
                             transform: calcTranslateY(0.1),
                         }}>
-                        <div className={styles.AvatarContainer}>
+                        <animated.div
+                            className={styles.AvatarContainer}
+                            style={{
+                                height: trail[1].height.interpolate(h => h * 3),
+                                opacity: trail[1].opacity.interpolate(o => o),
+                            }}>
                             <div className={styles.Avatar}>MH</div>
-                        </div>
+                        </animated.div>
                         <span className={styles.Greeting}>
                             {trail.map(({ height, ...rest }, index) => (
                                 <animated.div key={items[index]} style={{ ...rest }}>
