@@ -21,7 +21,7 @@ const config: SpringConfig = {
 
 export default ({ small = false }) => {
     const { scale, offset } = useSpring({
-        from: { scale: 1, offset: 24 },
+        from: { scale: 1, offset: 1 },
         scale: small ? 0.7 : 1,
         offset: small ? 0 : 1,
         config,
