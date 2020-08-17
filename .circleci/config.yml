@@ -43,7 +43,10 @@ jobs:
                   at: ~/project
             - run:
                   name: Lint TypeScript code
-                  command: npm run lint:ci
+                  command: npm run lint:code:ci
+            - run:
+                  name: Lint Stylesheets
+                  command: npm run lint:styles:ci
             - persist_to_workspace:
                   root: ~/project
                   paths:
