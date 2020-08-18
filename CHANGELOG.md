@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/MichaelHettmer/website/compare/v1.0.0...v1.0.1) (2020-08-18)
+
+
+### Bug Fixes
+
+* bump gatsby by a few minor versions to prevent running in an error ([d8e653e](https://github.com/MichaelHettmer/website/commit/d8e653e5fc54fcfb37faae4e77d94638525cdd34))
+
 # 1.0.0 (2020-08-18)
 
 
