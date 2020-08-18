@@ -6,7 +6,7 @@ orbs:
 jobs:
     checkout:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - checkout
             - restore_cache:
@@ -27,7 +27,7 @@ jobs:
 
     commitlint:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
@@ -37,13 +37,16 @@ jobs:
 
     lint:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
             - run:
                   name: Lint TypeScript code
-                  command: npm run lint:ci
+                  command: npm run lint:code:ci
+            - run:
+                  name: Lint Stylesheets
+                  command: npm run lint:styles:ci
             - persist_to_workspace:
                   root: ~/project
                   paths:
@@ -52,7 +55,7 @@ jobs:
 
     test:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
@@ -67,7 +70,7 @@ jobs:
 
     codecov:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
@@ -76,7 +79,7 @@ jobs:
 
     build:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
@@ -94,7 +97,7 @@ jobs:
 
     release:
         docker:
-            - image: circleci/node:12.16.1
+            - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project

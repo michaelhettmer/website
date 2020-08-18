@@ -1,7 +1,7 @@
 <div align="center">
 <h1>website</h1>
 
-<p>My portfolio, blog and things I find worse sharing</p>
+<p>My portfolio, blog and things I find worth sharing</p>
 </div>
 
 ---
