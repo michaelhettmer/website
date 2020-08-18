@@ -8,7 +8,7 @@ interface Props {
     title?: string;
 }
 
-export default ({ description = ``, title }: Props) => {
+export default ({ description = ``, title }: Props): JSX.Element => {
     const query = useStaticQuery(
         graphql`
             query {

@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import styles from './Research.module.css';
 
-export default () => (
+export default (): JSX.Element => (
     <div className={styles.Root}>
         <AppBar position="static">
             <Toolbar>

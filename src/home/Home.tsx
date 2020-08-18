@@ -20,7 +20,7 @@ interface HighlightProps {
     route: string;
 }
 
-const Highlight = ({ img, label, content, route }: HighlightProps) => (
+const Highlight = ({ img, label, content, route }: HighlightProps): JSX.Element => (
     <Card variant="outlined" className={styles.Card}>
         <CardActionArea onClick={() => navigate(route)}>
             <div className={styles.CardImageContainer}>
@@ -38,7 +38,7 @@ const Highlight = ({ img, label, content, route }: HighlightProps) => (
     </Card>
 );
 
-export default () => {
+export default (): JSX.Element => {
     const data = useStaticQuery(graphql`
         query {
             development: file(relativePath: { eq: "highlight_development.jpg" }) {
@@ -65,7 +65,7 @@ export default () => {
         }
     `);
     const [isHeaderVisible, setIsHeaderVisible] = useState(false);
-    const ref = useRef();
+    const ref = useRef<HTMLDivElement>(null);
     const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
 
     const handleScroll = () => {
@@ -84,7 +84,7 @@ export default () => {
         };
     });
     const calcTranslateY = (factor: number, max = 512) =>
-        offset.interpolate(o => typeof o === 'number' && `translateY(${Math.min(o, max) * factor}px)`);
+        offset.interpolate((o) => typeof o === 'number' && `translateY(${Math.min(o as number, max) * factor}px)`);
 
     const topTrail = useTrail(items.length, {
         config,
@@ -102,13 +102,15 @@ export default () => {
                     <animated.div
                         className={styles.TopContent}
                         style={{
+                            /* eslint-disable @typescript-eslint/ban-ts-comment */
+                            // @ts-ignore: TS2532: Object is possibly 'undefined'.
                             transform: calcTranslateY(0.1),
                         }}>
                         <animated.div
                             className={styles.AvatarContainer}
                             style={{
-                                height: topTrail[1].height.interpolate(h => h * 3),
-                                opacity: topTrail[1].opacity.interpolate(o => o),
+                                height: topTrail[1].height.interpolate((h) => h * 3),
+                                opacity: topTrail[1].opacity.interpolate((o) => o),
                             }}>
                             <div className={styles.Avatar}>MH</div>
                         </animated.div>
@@ -125,6 +127,8 @@ export default () => {
                 <animated.div
                     className={styles.Cards}
                     style={{
+                        /* eslint-disable @typescript-eslint/ban-ts-comment */
+                        // @ts-ignore: error TS2322: Type 'OpaqueInterpolation<string | false>' is not assignable to type '"none" | (string & {}) | "inherit" | "initial" | "-moz-initial" | "revert" | "unset" | undefined'.
                         transform: calcTranslateY(-0.1),
                     }}>
                     <Paper className={styles.CardsContent} elevation={4}>

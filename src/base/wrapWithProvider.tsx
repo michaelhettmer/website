@@ -13,9 +13,10 @@ export const secondary = '#00636e';
 
 const theme = createMuiTheme({ palette: { primary: { main: primary }, secondary: { main: secondary } } });
 
-// eslint-disable-next-line react/display-name
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const wrapWithProvider = ({ element }: any) => {
+/* eslint-disable react/display-name */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+const wrapWithProvider = ({ element }: any): JSX.Element => {
     return (
         <HelmetProvider>
             <ThemeProvider {...{ theme }}>
