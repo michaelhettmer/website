@@ -128,7 +128,7 @@
         "axios": "0.19.2",
         "classnames": "2.2.6",
         "gatsby": "2.19.5",
-        "gatsby-background-image": "0.9.13",
+        "gatsby-background-image": "0.9.19",
         "gatsby-image": "2.2.39",
         "gatsby-plugin-manifest": "2.2.38",
         "gatsby-plugin-minify-classnames": "0.1.2",
