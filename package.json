@@ -1,6 +1,7 @@
 {
     "name": "website",
     "version": "1.0.3",
+    "private": true,
     "description": "My portfolio, blog and things I find worth sharing",
     "keywords": [
         "node",
