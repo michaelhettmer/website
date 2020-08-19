@@ -1,0 +1,166 @@
+:root {
+    --top-height: 50vh;
+    --content-height: 25vh;
+}
+
+.Root {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.Top,
+.Bottom,
+.HeaderBar {
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23006f7c' fill-opacity='0.69' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #00a3b1;
+}
+
+.Top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: inset 0px -15px 10px -15px #00000066;
+    height: var(--top-height);
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #00a3b1;
+    box-shadow: inset 0px 15px 10px -15px #00000066;
+    height: 25vh;
+    margin-top: -96px;
+}
+
+.BottomContent {
+    vertical-align: middle;
+    margin: 4px;
+    margin: 48px 6px;
+}
+
+.TopContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1024px;
+    flex: 1;
+    padding: 32px 0 64px 0;
+}
+
+.AvatarContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #006f7c;
+    border-radius: 128px;
+    width: 25vh;
+    height: 25vh;
+    margin-right: 48px;
+    font-size: 96px;
+    color: white;
+}
+
+.Greeting {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 48px;
+    font-size: calc(25vh / 4);
+    height: 25vh;
+}
+
+.Cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardsContent {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1400px;
+    padding: 64px 32px;
+    margin-top: -48px;
+}
+
+.CardsContentHightlight {
+    display: flex;
+    flex-direction: row;
+}
+
+.Card {
+    flex: 1;
+    text-align: center;
+    height: 384px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.CardImageContainer {
+    height: 25vh;
+    overflow: hidden;
+}
+
+.CardImage {
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.CardImage:hover {
+    transform: scale(1.1);
+}
+
+.CardText {
+    display: flex;
+    flex-direction: column;
+    height: calc(384px - 25vh);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Text {
+    padding: 48px 24px 0px 24px;
+    text-align: justify;
+    color: gray;
+}
+
+.HeaderBar,
+.HeaderBarVisible {
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 100vw;
+    height: 64px;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    box-shadow: 0px 15px 15px -12px #00000066;
+}
+
+.HeaderBarVisible {
+    opacity: 1;
+}
+
+.HeaderBarText {
+    color: white;
+    padding: 24px;
+}

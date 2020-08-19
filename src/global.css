@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
-    --scrollbarBG: #00000044;
-    --thumbBG: #00000044;
+    --scrollbarBG: #000000aa;
+    --thumbBG: #00000099;
 }
 *,
 *:before,
@@ -30,7 +30,7 @@ body {
 }
 *::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG);
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 code {

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 
-const getSize = () => {
+type Dimensions = { innerHeight: number; innerWidth: number; outerHeight: number; outerWidth: number };
+
+const getSize = (): Dimensions => {
     return typeof window !== `undefined`
         ? {
               innerHeight: window.innerHeight,
@@ -16,7 +18,7 @@ const getSize = () => {
           };
 };
 
-const useWindowSize = () => {
+const useWindowSize = (): Dimensions => {
     const [windowSize, setWindowSize] = useState(getSize());
 
     const handleResize = () => {

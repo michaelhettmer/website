@@ -8,14 +8,15 @@ if (process.env.NODE_ENV === 'test') {
     (HelmetProvider as any).canUseDOM = false;
 }
 
-export const primary = '#3f51b5';
-export const secondary = '#FFC05C';
+export const primary = '#00a3b1';
+export const secondary = '#00636e';
 
 const theme = createMuiTheme({ palette: { primary: { main: primary }, secondary: { main: secondary } } });
 
-// eslint-disable-next-line react/display-name
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const wrapWithProvider = ({ element }: any) => {
+/* eslint-disable react/display-name */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+const wrapWithProvider = ({ element }: any): JSX.Element => {
     return (
         <HelmetProvider>
             <ThemeProvider {...{ theme }}>
