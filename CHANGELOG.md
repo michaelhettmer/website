@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/MichaelHettmer/website/compare/v1.0.2...v1.0.3) (2020-08-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-helmet-async to v1.0.6 ([2af7ef5](https://github.com/MichaelHettmer/website/commit/2af7ef54eba3ca8644667cf01a75c080bc14bf91))
+
 ## [1.0.2](https://github.com/MichaelHettmer/website/compare/v1.0.1...v1.0.2) (2020-08-19)
 
 
