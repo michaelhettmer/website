@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/MichaelHettmer/website/compare/v1.0.1...v1.0.2) (2020-08-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lodash to v4.17.20 ([0a00a34](https://github.com/MichaelHettmer/website/commit/0a00a34688209b88400eb528495ad2bc7a417a81))
+
 ## [1.0.1](https://github.com/MichaelHettmer/website/compare/v1.0.0...v1.0.1) (2020-08-18)
 
 
