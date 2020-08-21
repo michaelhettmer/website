@@ -154,7 +154,7 @@
         "stylelint-prettier": "1.1.2",
         "trim-right": "1.0.1",
         "ts-jest": "26.2.0",
-        "typescript": "3.9.7",
+        "typescript": "4.0.2",
         "typescript-plugin-css-modules": "2.4.0",
         "webpack": "4.44.1"
     },
