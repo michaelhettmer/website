@@ -146,7 +146,7 @@
         "prettier": "2.1.0",
         "prop-types": "15.7.2",
         "semantic-release": "17.1.1",
-        "sharp": "0.25.4",
+        "sharp": "0.26.0",
         "start-server-and-test": "1.11.3",
         "stylelint": "13.6.1",
         "stylelint-config-prettier": "8.0.2",
