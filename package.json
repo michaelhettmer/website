@@ -148,7 +148,7 @@
         "semantic-release": "17.1.1",
         "sharp": "0.26.0",
         "start-server-and-test": "1.11.3",
-        "stylelint": "13.6.1",
+        "stylelint": "13.7.0",
         "stylelint-config-prettier": "8.0.2",
         "stylelint-junit-formatter": "0.2.2",
         "stylelint-prettier": "1.1.2",
