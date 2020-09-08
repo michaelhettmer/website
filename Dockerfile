@@ -1,4 +1,25 @@
+FROM node:10.19.0 as builder
+
+COPY package-lock.json /app/
+COPY package.json /app/
+COPY gatsby-browser.js /app/gatsby-browser.js
+COPY gatsby-config.js /app/gatsby-config.js
+COPY gatsby-node.js /app/gatsby-node.js
+COPY gatsby-ssr.js /app/gatsby-ssr.js
+COPY src/ /app/src/
+COPY public/ /app/public/
+
+WORKDIR /app/
+
+RUN npm ci
+RUN npm run build
+
 FROM nginx:1.19.2-alpine
 
-COPY public /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+WORKDIR /app/
+
+RUN rm -rf /usr/share/nginx/html/*
+COPY --from=builder /app/public/ /usr/share/nginx/html/
+
+RUN rm -rf /etc/nginx/conf.d/nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/

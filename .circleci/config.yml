@@ -77,15 +77,15 @@ jobs:
             - codecov/upload:
                   file: ./coverage/lcov.info
 
-    build:
+    typecheck:
         docker:
             - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
             - run:
-                  name: Build TypeScript code
-                  command: npm run build
+                  name: Transpile TypeScript code
+                  command: npm run typecheck
             - persist_to_workspace:
                   root: ~/project
                   paths:
@@ -95,13 +95,39 @@ jobs:
             - store_artifacts:
                   path: reports
 
+    build:
+        docker:
+            - image: circleci/node:12.18.3
+        steps:
+            - attach_workspace:
+                  at: ~/project
+            - setup_remote_docker:
+                  docker_layer_caching: false
+            - run:
+                  name: Build Docker Image
+                  command: docker build -t michaelhettmer/website .
+            - run:
+                  name: Persist Docker Image
+                  command: docker save michaelhettmer/website | gzip > docker_michaelhettmer_website.tar.gz
+            - persist_to_workspace:
+                  root: ~/project
+                  paths:
+                      - docker_michaelhettmer_website.tar.gz
+
     release:
         docker:
             - image: circleci/node:12.18.3
         steps:
             - attach_workspace:
                   at: ~/project
-            - run: npx semantic-release
+            - setup_remote_docker:
+                  docker_layer_caching: false
+            - run:
+                  name: Load Docker Image
+                  command: docker load -i docker_michaelhettmer_website.tar.gz
+            - run:
+                  name: Release Docker Image
+                  command: npx semantic-release
 
 workflows:
     build:
@@ -116,6 +142,9 @@ workflows:
             - test:
                   requires:
                       - checkout
+            - typecheck:
+                  requires:
+                      - checkout
             - codecov:
                   requires:
                       - test
@@ -124,6 +153,7 @@ workflows:
                       - lint
                       - commitlint
                       - test
+                      - typecheck
             - release:
                   requires:
                       - build

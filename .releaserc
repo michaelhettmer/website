@@ -15,7 +15,14 @@
         [
             "@semantic-release/npm",
             {
-                "tarballDir": "dist"
+                "tarballDir": "dist",
+                "npmPublish": false
+            }
+        ],
+        [
+            "semantic-release-docker",
+            {
+                "name": "michaelhettmer/website"
             }
         ],
         [
