@@ -7,7 +7,6 @@ COPY gatsby-config.js /app/gatsby-config.js
 COPY gatsby-node.js /app/gatsby-node.js
 COPY gatsby-ssr.js /app/gatsby-ssr.js
 COPY src/ /app/src/
-COPY public/ /app/public/
 
 WORKDIR /app/
 
