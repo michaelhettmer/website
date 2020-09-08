@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/MichaelHettmer/website/compare/v1.1.7...v1.1.8) (2020-09-08)
+
+
+### Bug Fixes
+
+* install missing semantic-release-docker package ([053e263](https://github.com/MichaelHettmer/website/commit/053e2639029408ef49590d7b6ae4ece7c3ab0a9f))
+
 ## [1.1.7](https://github.com/MichaelHettmer/website/compare/v1.1.6...v1.1.7) (2020-09-08)
 
 
