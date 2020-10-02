@@ -83,7 +83,7 @@
         "intersection-observer": "0.11.0",
         "lodash": "4.17.20",
         "notistack": "1.0.0",
-        "query-string": "6.13.4",
+        "query-string": "6.13.5",
         "react": "16.13.1",
         "react-dom": "16.13.1",
         "react-helmet-async": "1.0.7",
