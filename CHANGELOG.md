@@ -1,3 +1,10 @@
+## [1.1.20](https://github.com/MichaelHettmer/website/compare/v1.1.19...v1.1.20) (2020-10-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency query-string to v6.13.5 ([049c95f](https://github.com/MichaelHettmer/website/commit/049c95f7d519f0004456eacb46f5bee4d9ae9a60))
+
 ## [1.1.19](https://github.com/MichaelHettmer/website/compare/v1.1.18...v1.1.19) (2020-09-28)
 
 
