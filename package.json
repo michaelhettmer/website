@@ -106,7 +106,7 @@
         "@typescript-eslint/eslint-plugin": "4.4.0",
         "@typescript-eslint/parser": "4.4.0",
         "babel-eslint": "10.1.0",
-        "babel-jest": "26.5.0",
+        "babel-jest": "26.5.2",
         "babel-plugin-transform-remove-console": "6.9.4",
         "babel-preset-gatsby": "0.5.13",
         "chokidar-cli": "2.1.0",
