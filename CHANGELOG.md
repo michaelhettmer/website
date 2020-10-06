@@ -1,3 +1,10 @@
+## [1.1.21](https://github.com/MichaelHettmer/website/compare/v1.1.20...v1.1.21) (2020-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency notistack to v1.0.1 ([61742f3](https://github.com/MichaelHettmer/website/commit/61742f313f64dedbee971780e8e90f64d98b4638))
+
 ## [1.1.20](https://github.com/MichaelHettmer/website/compare/v1.1.19...v1.1.20) (2020-10-02)
 
 
