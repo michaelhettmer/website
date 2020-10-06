@@ -82,7 +82,7 @@
         "gatsby-plugin-svgr": "2.0.2",
         "intersection-observer": "0.11.0",
         "lodash": "4.17.20",
-        "notistack": "1.0.0",
+        "notistack": "1.0.1",
         "query-string": "6.13.5",
         "react": "16.13.1",
         "react-dom": "16.13.1",
