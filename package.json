@@ -84,8 +84,8 @@
         "lodash": "4.17.20",
         "notistack": "1.0.1",
         "query-string": "6.13.5",
-        "react": "16.13.1",
-        "react-dom": "16.13.1",
+        "react": "16.14.0",
+        "react-dom": "16.14.0",
         "react-helmet-async": "1.0.7",
         "react-spring": "8.0.27"
     },
