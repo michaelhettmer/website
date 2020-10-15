@@ -1,3 +1,10 @@
+## [1.1.30](https://github.com/MichaelHettmer/website/compare/v1.1.29...v1.1.30) (2020-10-15)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v16.14.0 ([07efdd0](https://github.com/MichaelHettmer/website/commit/07efdd0132c93d8b442b81b9bf9335b3bad306cd))
+
 ## [1.1.29](https://github.com/MichaelHettmer/website/compare/v1.1.28...v1.1.29) (2020-10-14)
 
 
