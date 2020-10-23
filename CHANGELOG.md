@@ -1,3 +1,10 @@
+## [1.1.39](https://github.com/MichaelHettmer/website/compare/v1.1.38...v1.1.39) (2020-10-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to v0.21.0 ([d943d59](https://github.com/MichaelHettmer/website/commit/d943d59efd1f938011a52cdf749cb0755e1d9ee0))
+
 ## [1.1.38](https://github.com/MichaelHettmer/website/compare/v1.1.37...v1.1.38) (2020-10-22)
 
 
