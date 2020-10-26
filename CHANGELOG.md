@@ -1,3 +1,10 @@
+## [1.1.41](https://github.com/MichaelHettmer/website/compare/v1.1.40...v1.1.41) (2020-10-26)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([342cdb5](https://github.com/MichaelHettmer/website/commit/342cdb5c96eaa7c8e17fc244326d03d61c2e11a5))
+
 ## [1.1.40](https://github.com/MichaelHettmer/website/compare/v1.1.39...v1.1.40) (2020-10-26)
 
 
