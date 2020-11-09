@@ -1,3 +1,10 @@
+## [1.1.50](https://github.com/MichaelHettmer/website/compare/v1.1.49...v1.1.50) (2020-11-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-offline to v3.3.3 ([121ae11](https://github.com/MichaelHettmer/website/commit/121ae115cfd3e042157410608302e17847b71d1e))
+
 ## [1.1.49](https://github.com/MichaelHettmer/website/compare/v1.1.48...v1.1.49) (2020-11-05)
 
 
