@@ -1,3 +1,10 @@
+## [1.1.53](https://github.com/MichaelHettmer/website/compare/v1.1.52...v1.1.53) (2020-11-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-image to v2.5.0 ([97d72aa](https://github.com/MichaelHettmer/website/commit/97d72aab7dec4176f4873cc7e3004f8a5bfbd83b))
+
 ## [1.1.52](https://github.com/MichaelHettmer/website/compare/v1.1.51...v1.1.52) (2020-11-12)
 
 
