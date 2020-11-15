@@ -1,3 +1,10 @@
+## [1.1.55](https://github.com/MichaelHettmer/website/compare/v1.1.54...v1.1.55) (2020-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @svgr/webpack to v5.5.0 ([d266fb6](https://github.com/MichaelHettmer/website/commit/d266fb6c9608b5a4acea40f5872519c5499ee871))
+
 ## [1.1.54](https://github.com/MichaelHettmer/website/compare/v1.1.53...v1.1.54) (2020-11-13)
 
 
