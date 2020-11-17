@@ -75,7 +75,7 @@
         "gatsby": "2.26.1",
         "gatsby-background-image": "1.2.0",
         "gatsby-image": "2.5.0",
-        "gatsby-plugin-manifest": "2.6.0",
+        "gatsby-plugin-manifest": "2.6.1",
         "gatsby-plugin-minify-classnames": "0.2.0",
         "gatsby-plugin-offline": "3.4.0",
         "gatsby-plugin-react-helmet-async": "1.1.0",
