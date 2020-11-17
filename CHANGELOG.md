@@ -1,3 +1,10 @@
+## [1.1.56](https://github.com/MichaelHettmer/website/compare/v1.1.55...v1.1.56) (2020-11-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-manifest to v2.6.1 ([390ca74](https://github.com/MichaelHettmer/website/commit/390ca74b0557520d97f1e21f894f36776f34d7e4))
+
 ## [1.1.55](https://github.com/MichaelHettmer/website/compare/v1.1.54...v1.1.55) (2020-11-15)
 
 
