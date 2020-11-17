@@ -149,7 +149,7 @@
         "semantic-release-docker": "2.2.0",
         "sharp": "0.26.3",
         "start-server-and-test": "1.11.5",
-        "stylelint": "13.7.2",
+        "stylelint": "13.8.0",
         "stylelint-config-prettier": "8.0.2",
         "stylelint-junit-formatter": "0.2.2",
         "stylelint-prettier": "1.1.2",
