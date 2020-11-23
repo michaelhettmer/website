@@ -128,7 +128,7 @@
         "gatsby-plugin-root-import": "2.0.5",
         "gatsby-plugin-sharp": "2.9.0",
         "gatsby-plugin-typescript": "2.7.0",
-        "gatsby-source-filesystem": "2.6.0",
+        "gatsby-source-filesystem": "2.6.1",
         "gatsby-transformer-json": "2.6.0",
         "gatsby-transformer-sharp": "2.7.0",
         "git-branch-is": "4.0.0",
