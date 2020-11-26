@@ -1,3 +1,10 @@
+## [1.1.63](https://github.com/MichaelHettmer/website/compare/v1.1.62...v1.1.63) (2020-11-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby to v2.27.4 ([140777c](https://github.com/MichaelHettmer/website/commit/140777c5e4fec7d9d828694832d33c8cadd5050b))
+
 ## [1.1.62](https://github.com/MichaelHettmer/website/compare/v1.1.61...v1.1.62) (2020-11-26)
 
 
