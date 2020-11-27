@@ -126,7 +126,7 @@
         "gatsby-plugin-postcss": "2.3.13",
         "gatsby-plugin-remove-console": "0.0.2",
         "gatsby-plugin-root-import": "2.0.5",
-        "gatsby-plugin-sharp": "2.9.0",
+        "gatsby-plugin-sharp": "2.9.1",
         "gatsby-plugin-typescript": "2.7.0",
         "gatsby-source-filesystem": "2.6.1",
         "gatsby-transformer-json": "2.6.0",
