@@ -1,3 +1,10 @@
+## [1.1.65](https://github.com/MichaelHettmer/website/compare/v1.1.64...v1.1.65) (2020-12-03)
+
+
+### Bug Fixes
+
+* **deps:** update mui monorepo ([84fcda6](https://github.com/MichaelHettmer/website/commit/84fcda6a6cf292cdab2ec0fd0099a7aa9137ce7f))
+
 ## [1.1.64](https://github.com/MichaelHettmer/website/compare/v1.1.63...v1.1.64) (2020-11-30)
 
 
