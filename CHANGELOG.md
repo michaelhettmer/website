@@ -1,3 +1,10 @@
+## [1.1.66](https://github.com/MichaelHettmer/website/compare/v1.1.65...v1.1.66) (2020-12-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @material-ui/icons to v4.11.2 ([ae286c7](https://github.com/MichaelHettmer/website/commit/ae286c7e9072fff8a6717586d5b9f457a48e2f07))
+
 ## [1.1.65](https://github.com/MichaelHettmer/website/compare/v1.1.64...v1.1.65) (2020-12-03)
 
 
