@@ -1,3 +1,10 @@
+## [1.1.69](https://github.com/MichaelHettmer/website/compare/v1.1.68...v1.1.69) (2020-12-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency intersection-observer to v0.12.0 ([fee6bed](https://github.com/MichaelHettmer/website/commit/fee6bed4dbbb61ee5e36874116fdc3a3da581253))
+
 ## [1.1.68](https://github.com/MichaelHettmer/website/compare/v1.1.67...v1.1.68) (2020-12-10)
 
 
