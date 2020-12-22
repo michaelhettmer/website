@@ -147,7 +147,7 @@
         "prop-types": "15.7.2",
         "semantic-release": "17.2.1",
         "semantic-release-docker": "2.2.0",
-        "sharp": "0.26.3",
+        "sharp": "0.27.0",
         "start-server-and-test": "1.11.6",
         "stylelint": "13.8.0",
         "stylelint-config-prettier": "8.0.2",
