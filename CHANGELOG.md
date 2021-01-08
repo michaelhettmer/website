@@ -1,3 +1,10 @@
+## [1.1.76](https://github.com/MichaelHettmer/website/compare/v1.1.75...v1.1.76) (2021-01-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-svgr to v2.1.0 ([7110b13](https://github.com/MichaelHettmer/website/commit/7110b139c331d6437cdfe7e8a4d189139acc10e8))
+
 ## [1.1.75](https://github.com/MichaelHettmer/website/compare/v1.1.74...v1.1.75) (2021-01-06)
 
 
