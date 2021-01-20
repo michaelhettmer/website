@@ -123,7 +123,7 @@
         "eslint-plugin-react": "7.22.0",
         "eslint-plugin-react-hooks": "4.2.0",
         "gatsby-cli": "2.18.0",
-        "gatsby-plugin-postcss": "2.3.13",
+        "gatsby-plugin-postcss": "3.6.0",
         "gatsby-plugin-remove-console": "0.0.2",
         "gatsby-plugin-root-import": "2.0.5",
         "gatsby-plugin-sharp": "2.13.1",
