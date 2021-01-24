@@ -1,3 +1,10 @@
+## [1.1.81](https://github.com/MichaelHettmer/website/compare/v1.1.80...v1.1.81) (2021-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @material-ui/core to v4.11.3 ([e3486cb](https://github.com/MichaelHettmer/website/commit/e3486cb5de699d87268bd7b4ca429e41295d5eb3))
+
 ## [1.1.80](https://github.com/MichaelHettmer/website/compare/v1.1.79...v1.1.80) (2021-01-21)
 
 
