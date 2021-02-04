@@ -1,3 +1,10 @@
+## [1.1.83](https://github.com/MichaelHettmer/website/compare/v1.1.82...v1.1.83) (2021-02-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby to v2.32.1 ([d50a999](https://github.com/MichaelHettmer/website/commit/d50a9990ce1f794c5eeb2d223a1167001865c3fd))
+
 ## [1.1.82](https://github.com/MichaelHettmer/website/compare/v1.1.81...v1.1.82) (2021-02-04)
 
 
