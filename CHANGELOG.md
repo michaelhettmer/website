@@ -1,3 +1,10 @@
+## [1.1.84](https://github.com/MichaelHettmer/website/compare/v1.1.83...v1.1.84) (2021-02-04)
+
+
+### Bug Fixes
+
+* **deps:** update gatsby monorepo ([7502b76](https://github.com/MichaelHettmer/website/commit/7502b76cfd3a659add6b41287566d0f39f8771ca))
+
 ## [1.1.83](https://github.com/MichaelHettmer/website/compare/v1.1.82...v1.1.83) (2021-02-04)
 
 
