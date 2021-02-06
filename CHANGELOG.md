@@ -1,3 +1,10 @@
+## [1.1.85](https://github.com/MichaelHettmer/website/compare/v1.1.84...v1.1.85) (2021-02-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-background-image to v1.4.1 ([e5c458a](https://github.com/MichaelHettmer/website/commit/e5c458aad53e00f46c3b21b222526e98239f427b))
+
 ## [1.1.84](https://github.com/MichaelHettmer/website/compare/v1.1.83...v1.1.84) (2021-02-04)
 
 
