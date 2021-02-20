@@ -1,3 +1,10 @@
+## [1.1.89](https://github.com/MichaelHettmer/website/compare/v1.1.88...v1.1.89) (2021-02-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency lodash to v4.17.21 ([6d2c443](https://github.com/MichaelHettmer/website/commit/6d2c443654704b5748ffe98ef2b815fe73000d75))
+
 ## [1.1.88](https://github.com/MichaelHettmer/website/compare/v1.1.87...v1.1.88) (2021-02-18)
 
 
