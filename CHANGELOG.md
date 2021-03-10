@@ -1,3 +1,10 @@
+## [1.1.101](https://github.com/MichaelHettmer/website/compare/v1.1.100...v1.1.101) (2021-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-react-helmet-async to v1.2.0 ([629b679](https://github.com/MichaelHettmer/website/commit/629b679c0f55326517d1db666af887520520777b))
+
 ## [1.1.100](https://github.com/MichaelHettmer/website/compare/v1.1.99...v1.1.100) (2021-03-10)
 
 
