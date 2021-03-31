@@ -13,7 +13,7 @@ WORKDIR /app/
 RUN npm ci
 RUN npm run build
 
-FROM nginx:1.19.8-alpine
+FROM nginx:1.19.9-alpine
 
 WORKDIR /app/
 
