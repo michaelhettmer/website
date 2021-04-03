@@ -1,3 +1,10 @@
+## [1.1.104](https://github.com/MichaelHettmer/website/compare/v1.1.103...v1.1.104) (2021-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency classnames to v2.3.1 ([49de6bd](https://github.com/MichaelHettmer/website/commit/49de6bd84d2767e89fc2a369c93472f84c1ec099))
+
 ## [1.1.103](https://github.com/MichaelHettmer/website/compare/v1.1.102...v1.1.103) (2021-04-01)
 
 
