@@ -1,3 +1,10 @@
+## [1.1.105](https://github.com/MichaelHettmer/website/compare/v1.1.104...v1.1.105) (2021-04-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency gatsby-plugin-minify-classnames to v0.3.0 ([0c4ffd0](https://github.com/MichaelHettmer/website/commit/0c4ffd00873ce3ca1866998ebbca7dddacb37013))
+
 ## [1.1.104](https://github.com/MichaelHettmer/website/compare/v1.1.103...v1.1.104) (2021-04-03)
 
 
