@@ -153,7 +153,7 @@
         "stylelint-config-prettier": "8.0.2",
         "stylelint-junit-formatter": "0.2.2",
         "stylelint-prettier": "1.2.0",
-        "trim-right": "1.0.1",
+        "trim-right": "2.0.0",
         "ts-jest": "26.5.6",
         "typescript": "4.3.5",
         "typescript-plugin-css-modules": "3.4.0",
