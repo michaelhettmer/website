@@ -1,4 +1,4 @@
-FROM node:10.24.1 as builder
+FROM node:17.5.0 as builder
 
 COPY package-lock.json /app/
 COPY package.json /app/
